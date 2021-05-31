@@ -21,3 +21,7 @@
   
   // Initially load some items.
   loadMore();
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+    alert('The content of the DOM is loaded');
+});
