@@ -10,7 +10,7 @@ form.addEventListener("submit",(event)=>{
 });
 
 function createUI(title){
-    
+    document.querySelector("#title").value="";
     let li = document.createElement("li");
     li.innerText = title;
     li.style.fontSize = "1.5rem";
