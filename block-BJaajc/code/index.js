@@ -3,7 +3,7 @@ function getFullName(firstName, lastName) {
 }
 
 function isPalindome(word) {
-  let newWord = word.reverse();
+  let newWord = word.split('').reverse().join('');
   if (newWord === word) {
     return true;
   }
