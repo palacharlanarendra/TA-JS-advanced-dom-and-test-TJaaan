@@ -2,13 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Assessment: Drag and Drop Game</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/2bbf3cce3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
   </head>
   <body>
-    <script src="./index.js"></script>
+    <header>
+      <div class="header">
+        <h1>DRAG AND DROP GAME</h1>
+        <p class="score">0 / 0</p>
+      </div>
+    </header>
+    <section class="draggable-elements">
+      <i
+        class="fab fa-js draggable"
+        draggable="true"
+        style="color: #222121"
+        id="js"
+      ></i>
+      <i
+        class="fab fa-whatsapp draggable"
+        draggable="true"
+        style="color: #4a8d59"
+        id="whatsapp"
+      ></i>
+      <i
+        class="fab fa-blogger draggable"
+        draggable="true"
+        style="color: #c55e35"
+        id="blogger"
+      ></i>
+      <i
+        class="fab fa-bitcoin draggable"
+        draggable="true"
+        style="color: #e9cd32"
+        id="bitcoin"
+      ></i>
+      <i
+        class="fab fa-app-store-ios draggable"
+        draggable="true"
+        style="color: #469dcf"
+        id="app-store-ios"
+      ></i>
+    </section>
+    <section class="droppable-elements">
+      <div class="droppable" data-draggable-id="js"><span>JS</span></div>
+      <div class="droppable" data-draggable-id="whatsapp">
+        <span>Whatsapp</span>
+      </div>
+      <div class="droppable" data-draggable-id="blogger"><span>Blog</span></div>
+      <div class="droppable" data-draggable-id="bitcoin">
+        <span>Bitcoin</span>
+      </div>
+      <div class="droppable" data-draggable-id="app-store-ios">
+        <span>Appstore</span>
+      </div>
+      <div class="button">
+        <button class="btn">PLAY AGAIN</button>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
   </body>
 </html>
