@@ -21,15 +21,31 @@ class Cart {
 3. Implement a function that takes an array and some other arguments then removes the other arguments from that array:
 
 ```js
-function removeFromArray() {}
-
+function removeFromArray(array, num) {
+  let newArray = [];
+  for (let i = 0; i <= array.length - 1; i++) {
+    if (array[i] != num) {
+      newArray.push(array[i]);
+    }
+  }
+  return newArray;
+}
 removeFromArray([1, 2, 3, 4], 3); // should remove 3 and return [1,2,4]
 ```
 
 Write three test for `removeFromArray` function
 
 4. List 10 examples of `Matchers` form [https://jestjs.io/docs/en/using-matchers](https://jestjs.io/docs/en/using-matchers). Try to have different methods of different types
-
+   <!-- toBe
+   toEqual
+   toBeNull
+   toBeUndefined
+   toBeDefined
+   toBeTruthy
+   toBeFalsy
+   toMatch
+   toContain
+   toThrow -->
 5. Write three test for the following function.
 
 ```js
@@ -46,7 +62,7 @@ function map(items, callback) {
 function reduce(items, reducer, inititalValue = items[0]) {
   let acc = inititalValue;
   for (let index = 0; index < items.length; index++) {
-   acc = reducer(acc, items[index], index, items));
+    acc = reducer(acc, (items[index] = 0), index, items);
   }
   return acc;
 }
